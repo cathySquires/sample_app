@@ -20,10 +20,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 1em;
+  h1 {
+    margin-bottom: 1em;
+  }
 }
 
 /* typography */
@@ -45,7 +44,7 @@ h2 {
   margin-bottom: 2em;
   text-align: center;
   font-weight: normal;
-  color: #555;
+  color: $gray;
 }
 
 p {
@@ -65,40 +64,35 @@ p {
   padding-top: 0.5em;
   font-weight: bold;
   line-height: 1;
-}
-
-#logo:hover {
+  &:hover {
   color: #fff;
   text-decoration: none;
+  }
 }
 
 /* footer */
 
 footer {
   margin-top: 2.5em;
-  padding-top: 0.5em;
+  padding: 0.5em;
   border-top: 1px solid #eaeaea;
-  color: #555;
+  color: $gray;
+  a {
+    color: $grayDark;
+    &:hover {
+      color: #000;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 1em;
+    }
+  }
 }
 
-footer a {
-  color: #333;
-}
-
-footer a:hover {
-  color: #000;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 1em;
-}
